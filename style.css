@@ -1,0 +1,23 @@
+* { padding:0; margin:0; text-decoration:none; color:#3b3b3b;}
+body { padding:30px;}
+table { width: 100%; border-collapse:collapse; border-spacing:0;}
+table.type1 thead { background:#27ae60; }
+table.type1 thead th { color:#fff; padding:5px;}
+table.type1 tbody th { padding: 5px;}
+table.type1 tbody tr:nth-child(odd) { background: #e9e9e9;}
+table.type1 tbody tr:nth-child(even) { background: #f6f6f6;}
+h1 { text-transform: uppercase;}
+.box { padding:40px 30px 10px; border: 5px solid #ea6153;}
+.box > * { display: block; border: 3px dashed #2980b9; margin:0 0 30px; padding: 5px;}
+.box table { display: table;}
+.box th,
+.box td { border: 1px solid orange;}
+.box input,
+.box label { display: inline;}
+.before:before { content: "32";}
+.after:after {content: "33";}
+/*
+27ae60
+ea6153
+2980b9
+ */
