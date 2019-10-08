@@ -1,6 +1,7 @@
 * { padding:0; margin:0; text-decoration:none; color:#3b3b3b; list-style: none;}
 body { padding:30px;}
 table { width: 100%; border-collapse:collapse; border-spacing:0;}
+table.type1 caption { padding: 0 0 10px; font-size: 20px; font-weight: bold;}
 table.type1 thead { background:#27ae60; }
 table.type1 thead th { color:#fff; padding:5px;}
 table.type1 tbody th { text-align: left; padding: 10px;}
