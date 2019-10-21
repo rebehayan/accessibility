@@ -11,7 +11,7 @@
 </head>
 <body>
   화면낭독기가 어떻게 읽혀 질까?
-  <ul>
+<ul>
   <li>해당 자료의 버전은 6개월에 한번씩 체크하게 됩니다.</li>
   <li>JAWS는 라이센스가 없어서 테스트를 못했습니다 ㅠㅠ....(테스트한계시간...40분귀찮....)</li>
 </ul>
@@ -36,14 +36,17 @@
         <col style="width:9%">
         <col style="width:9%">
         <col style="width:9%">
+		<col style="width:9%">
+        <col style="width:9%">
       </colgroup>
       <thead>
         <tr>
           <th rowspan="2">Element</th>
           <th colspan="2">NVDA / 2019.2.1</th>
           <th colspan="2">SenseLeader / 7.0.0.0</th>
-          <th colspan="2">iOS / 2.3</th>
-          <th colspan="2">Android / 3.5</th>
+          <th colspan="2">JAWS / 2020.1910.37</th>
+          <th>iOS / 11.4.1</th>
+          <th>Android / 9</th>
         </tr>
         <tr>
           <th>IE11</th>
@@ -52,7 +55,7 @@
           <th>Chrome</th>
           <th>IE11</th>
           <th>Chrome</th>
-          <th>IE11</th>
+          <th>Safari</th>
           <th>Chrome</th>
         </tr>
       </thead>
@@ -65,9 +68,9 @@
           <td></td>
           <td>-</td>
           <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>-</td>
           <td></td>
         </tr>
         <tr>
@@ -75,26 +78,26 @@
             &lt;header&gt;
           </th>
           <td>배너 랜드마크</td>
-          <td></td>
+          <td>배너 랜드마크</td>
           <td>-</td>
           <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>배너 랜드마크</td>
+          <td>배너</td>
         </tr>
         <tr>
           <th>
             &lt;main&gt;
           </th>
           <td>주요내용 랜드마크</td>
-          <td></td>
+          <td>주요내용 랜드마크</td>
           <td>-</td>
           <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>메인</td>
+          <td>메인</td>
+          <td>주요 랜드마크</td>
+          <td>메인</td>
         </tr>
         <tr>
           <th>
@@ -104,10 +107,10 @@
           <td></td>
           <td>-</td>
           <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>-</td>
+          <td>지역</td>
         </tr>
         <tr>
           <th>
@@ -117,36 +120,36 @@
           <td></td>
           <td>-</td>
           <td>프레임시작/끝</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>아티클</td>
+          <td>아티클</td>
+          <td>기사 랜드마크</td>
+          <td>아티클</td>
         </tr>
         <tr>
           <th>
             &lt;aside&gt;
           </th>
-          <td>-</td>
+          <td>보조정보 랜드마크</td>
           <td></td>
           <td>-</td>
           <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>보조 랜드마크</td>
+          <td>상호보완</td>
         </tr>
         <tr>
           <th>
             &lt;footer&gt;
           </th>
           <td>콘텐츠정보 랜드마크</td>
-          <td></td>
+          <td>콘텐츠정보 랜드마크</td>
           <td>-</td>
           <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>꼬릿말 랜드마크</td>
+          <td>바닥글</td>
         </tr>
         <tr>
           <th>
@@ -156,10 +159,10 @@
           <td></td>
           <td>-</td>
           <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
         <tr>
           <th>
@@ -169,23 +172,23 @@
           <td></td>
           <td>-</td>
           <td>캡션</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>&nbsp;</td>
+          <td>피규어</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
         <tr>
           <th>
             &lt;nav&gt;
           </th>
           <td>네비게이션 랜드마크</td>
-          <td></td>
+          <td>네비게이션 랜드마크</td>
           <td>-</td>
           <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>네비게이션</td>
+          <td>네비게이션</td>
+          <td>탐색 랜드마크</td>
+          <td>탐색</td>
         </tr>
       </tbody>
     </table>
@@ -206,14 +209,17 @@
         <col style="width:9%">
         <col style="width:9%">
         <col style="width:9%">
+        <col style="width:9%">
+        <col style="width:9%">
       </colgroup>
       <thead>
         <tr>
           <th rowspan="2">Element</th>
           <th colspan="2">NVDA / 2019.2.1</th>
           <th colspan="2">SenseLeader / 7.0.0.0</th>
-          <th colspan="2">iOS / 2.3</th>
-          <th colspan="2">Android / 3.5</th>
+          <th colspan="2">JAWS / 2020.1910.37</th>
+          <th>iOS / 13.1.1</th>
+          <th>Android / 9</th>
         </tr>
         <tr>
           <th>IE11</th>
@@ -222,7 +228,7 @@
           <th>Chrome</th>
           <th>IE11</th>
           <th>Chrome</th>
-          <th>IE11</th>
+          <th>Safari</th>
           <th>Chrome</th>
         </tr>
       </thead>
@@ -233,197 +239,198 @@
           <td></td>
           <td>&nbsp;</td>
           <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>머리말 헤딩레벨1~6</td>
+          <td>제목1~6</td>
         </tr>
         <tr>
           <th> &lt;mark&gt; </th>
           <td>-</td>
           <td>-</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>강조 표시된 콘텐츠</td>
         </tr>
         <tr>
           <th> &lt;a href="#"&gt; </th>
           <td>링크</td>
           <td>링크</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>링크</td>
+          <td>링크</td>
+          <td>링크</td>
+          <td>링크</td>
+          <td>링크</td>
+          <td>링크</td>
         </tr>
         <tr>
           <th> &lt;a href="#content"&gt; </th>
           <td>링크</td>
           <td>링크</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>현재페이지 링크</td>
+          <td>링크</td>
+          <td>samepage 링크</td>
+          <td>samepage 링크</td>
+          <td>링크</td>
+          <td>링크</td>
         </tr>
         <tr>
           <th> &lt;a href="http://www.naver.com" target="_blank"&gt; </th>
           <td>링크</td>
           <td>링크</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>새창 링크</td>
+          <td>링크</td>
+          <td>visited 링크</td>
+          <td>visited 링크</td>
+          <td>링크</td>
+          <td>링크</td>
         </tr>
         <tr>
           <th> &lt;address&gt; </th>
           <td>-</td>
           <td>-</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>콘텐츠 정보 랜드마크</td>
+          <td>-</td>
         </tr>
         <tr>
           <th> &lt;b&gt; </th>
           <td>-</td>
           <td>-</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
         <tr>
           <th> &lt;strong&gt; </th>
           <td>-</td>
           <td>-</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
         <tr>
           <th> &lt;ins&gt; </th>
           <td>삽입된</td>
           <td>삽입된</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>삽입</td>
         </tr>
         <tr>
           <th> &lt;em&gt; </th>
           <td>-</td>
+          <td>삽입안됨</td>
           <td>-</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
         <tr>
           <th> &lt;i&gt; </th>
           <td>-</td>
           <td>-</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
         <tr>
           <th> &lt;u&gt; </th>
           <td>-</td>
           <td>-</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
         <tr>
           <th> &lt;s&gt; </th>
           <td>-</td>
           <td>-</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
         <tr>
           <th> &lt;del&gt; </th>
           <td>삭제된</td>
           <td>삭제된</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>삭제</td>
         </tr>
         <tr>
           <th>&lt;blockquote&gt;</th>
           <td>인용문</td>
-          <td>인용문</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>인용문 삭제안됨</td>
+          <td>-</td>
+          <td>-</td>
+          <td>blockquote cite<br>
+          내용읽어줌</td>
+          <td>blockquote cite내용</td>
+          <td>-</td>
+          <td>인용구</td>
         </tr>
         <tr>
           <th>&lt;br&gt;</th>
+          <td>-</td>
           <td>빈줄</td>
-          <td>빈줄</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
         <tr>
           <th>&lt;img alt=&quot;&quot;&gt;</th>
           <td>그래픽</td>
           <td>그래픽</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>이미지</td>
+          <td>이미지</td>
+          <td>그래픽</td>
+          <td>그래픽</td>
+          <td>이미지</td>
+          <td>그래픽</td>
         </tr>
         <tr>
           <th>&lt;p&gt;</th>
           <td>&nbsp;</td>
           <td>-</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
       </tbody>
     </table>
@@ -449,8 +456,9 @@
           <th rowspan="2">Element</th>
           <th colspan="2">NVDA / 2019.2.1</th>
           <th colspan="2">SenseLeader / 7.0.0.0</th>
-          <th colspan="2">iOS / 2.3</th>
-          <th colspan="2">Android / 3.5</th>
+          <th colspan="2">JAWS / 2020.1910.37</th>
+          <th>iOS / 2.3</th>
+          <th>Android / 3.5</th>
         </tr>
         <tr>
           <th>IE11</th>
@@ -459,41 +467,41 @@
           <th>Chrome</th>
           <th>IE11</th>
           <th>Chrome</th>
-          <th>IE11</th>
+          <th>Safari</th>
           <th>Chrome</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <th>&lt;audio&gt;</th>
-          <td>&nbsp;</td>
-          <td></td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>오디오</td>
+          <td>정리중</td>
+          <td>정리중</td>
+          <td>정리중</td>
+          <td>정리중</td>
+          <td>정리중</td>
+          <td>정리중</td>
+          <td>정리중</td>
         </tr>
         <tr>
           <th>&lt;video&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>비디오</td>
+          <td>정리중</td>
+          <td>정리중</td>
+          <td>정리중</td>
+          <td>정리중</td>
+          <td>정리중</td>
+          <td>정리중</td>
+          <td>정리중</td>
         </tr>
         <tr>
           <th>&lt;dl&gt;<br>
             &lt;dt&gt;<br>
             &lt;dd&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td></td>
+          <td>목록</td>
+          <td>목록</td>
+          <td>목록</td>
+          <td>목록</td>
           <td></td>
           <td></td>
           <td></td>
@@ -502,10 +510,10 @@
         <tr>
           <th>&lt;ul&gt;<br>
             &lt;li&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td></td>
+          <td>목록</td>
+          <td>목록</td>
+          <td>목록</td>
+          <td>목록</td>
           <td></td>
           <td></td>
           <td></td>
@@ -514,10 +522,10 @@
         <tr>
           <th>&lt;ol&gt;<br>
             &lt;li&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td></td>
+          <td>목록</td>
+          <td>목록</td>
+          <td>목록</td>
+          <td>목록</td>
           <td></td>
           <td></td>
           <td></td>
@@ -525,10 +533,10 @@
         </tr>
         <tr>
           <th>&lt;hr&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>구분선</td>
+          <td>구분선</td>
+          <td>-</td>
+          <td>-</td>
           <td></td>
           <td></td>
           <td></td>
@@ -538,10 +546,10 @@
           <th>&lt;form&gt;<br>
             &lt;fieldset&gt;<br>
             &lt;legend&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
           <td></td>
           <td></td>
           <td></td>
@@ -549,10 +557,10 @@
         </tr>
         <tr>
           <th>&lt;button&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td></td>
+          <td>버튼</td>
+          <td>버튼</td>
+          <td>버튼</td>
+          <td>버튼</td>
           <td></td>
           <td></td>
           <td></td>
@@ -560,10 +568,11 @@
         </tr>
         <tr>
           <th>&lt;iframe&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td></td>
+          <td>프레임</td>
+          <td>-</td>
+          <td>프레임<br>
+            src읽음</td>
+          <td>프레임</td>
           <td></td>
           <td></td>
           <td></td>
@@ -571,10 +580,12 @@
         </tr>
         <tr>
           <th>&lt;input type=&quot;text&quot; value=&quot;&quot;&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>편집창 <br>
+            value 읽음</td>
+          <td>편집창 <br>
+          value 읽음</td>
+          <td>편집창</td>
+          <td>편집창</td>
           <td></td>
           <td></td>
           <td></td>
@@ -582,10 +593,13 @@
         </tr>
         <tr>
           <th>&lt;input type=&quot;password&quot; title=&quot;&quot;&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td></td>
+          <td>편집창 보호됨<br>
+            title 읽음</td>
+          <td>편집창 보호됨<br>
+            title 읽음</td>
+          <td>암호편집창</td>
+          <td>암호편집창<br>
+            title 읽음</td>
           <td></td>
           <td></td>
           <td></td>
@@ -593,9 +607,11 @@
         </tr>
         <tr>
           <th>&lt;input type=&quot;number&quot; placeholder=&quot;&quot;&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>편집창<br>
+            placeholder 읽음</td>
+          <td>스핀버튼 편집가능<br>
+            placeholder 읽음</td>
+          <td>스핀버튼</td>
           <td></td>
           <td></td>
           <td></td>
@@ -604,9 +620,9 @@
         </tr>
         <tr>
           <th>&lt;input type=&quot;tel&quot;&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>편집창</td>
+          <td>편집창</td>
+          <td>-</td>
           <td></td>
           <td></td>
           <td></td>
@@ -615,9 +631,10 @@
         </tr>
         <tr>
           <th>&lt;input type=&quot;date&quot;&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>편집창</td>
+          <td>년,월,일 스핀</td>
+          <td>데이트 에디터<br>
+            년,월,일 스핀</td>
           <td></td>
           <td></td>
           <td></td>
@@ -626,9 +643,9 @@
         </tr>
         <tr>
           <th>&lt;input type=&quot;color&quot;&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>편집창</td>
+          <td>-</td>
+          <td>컬러추적</td>
           <td></td>
           <td></td>
           <td></td>
@@ -637,9 +654,9 @@
         </tr>
         <tr>
           <th>&lt;input type=&quot;email&quot;&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>편집창</td>
+          <td>편집창</td>
+          <td>편집창</td>
           <td></td>
           <td></td>
           <td></td>
@@ -648,9 +665,9 @@
         </tr>
         <tr>
           <th>&lt;input type=&quot;url&quot;&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>편집창</td>
+          <td>편집창</td>
+          <td>편집창</td>
           <td></td>
           <td></td>
           <td></td>
@@ -659,9 +676,9 @@
         </tr>
         <tr>
           <th>&lt;input type=&quot;search&quot;&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>편집창</td>
+          <td>편집창</td>
+          <td>편집창</td>
           <td></td>
           <td></td>
           <td></td>
@@ -670,9 +687,9 @@
         </tr>
         <tr>
           <th>&lt;input type=&quot;radio&quot;&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>라디오버튼 해제됨</td>
+          <td>라디오버튼 해제됨</td>
+          <td>해제 라디오버튼</td>
           <td></td>
           <td></td>
           <td></td>
@@ -681,9 +698,9 @@
         </tr>
         <tr>
           <th>&lt;input type=&quot;checkbox&quot;&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>체크상자 해제됨</td>
+          <td>체크상자 해제됨</td>
+          <td>해제 체크상자</td>
           <td></td>
           <td></td>
           <td></td>
@@ -694,9 +711,9 @@
           <th>&lt;select&gt;<br>
             &lt;optgroup label=&quot;&quot;&gt;<br>
             &lt;option&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>콤보상자</td>
+          <td>콤보상자</td>
+          <td>콤보상자</td>
           <td></td>
           <td></td>
           <td></td>
@@ -706,9 +723,9 @@
         <tr>
           <th>&lt;select&gt;<br>
             &lt;option&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>콤보상자</td>
+          <td>콤보상자</td>
+          <td>콤보상자</td>
           <td></td>
           <td></td>
           <td></td>
@@ -728,9 +745,18 @@
 &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;<br>
 &lt;/tbody&gt;<br>
 &lt;/table&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>테이블<br>
+            caption안읽음<br>
+            열, 행구분 가능<br>
+            th, td 구분 없음</td>
+          <td>테이블<br>
+            caption 안읽음<br>
+            열, 행구분 가능<br>
+            th, td 구분 없음</td>
+          <td>테이블<br>
+            caption 읽음<br>
+            열, 행구분 없음<br>
+            th, td구분 없음</td>
           <td></td>
           <td></td>
           <td></td>
@@ -739,9 +765,9 @@
         </tr>
         <tr>
           <th>&lt;textarea rows=&quot;5&quot; cols=&quot;30&quot;&gt;&lt;/textarea&gt;</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>편집창 멀티라인</td>
+          <td>편집창 멀티라인</td>
+          <td>멀티라인 편집창</td>
           <td></td>
           <td></td>
           <td></td>
@@ -750,9 +776,9 @@
         </tr>
         <tr>
           <th>:before</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>-</td>
+          <td>읽음</td>
+          <td>읽음</td>
           <td></td>
           <td></td>
           <td></td>
@@ -761,9 +787,9 @@
         </tr>
         <tr>
           <th>:after</th>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>-</td>
+          <td>읽음</td>
+          <td>읽음</td>
           <td></td>
           <td></td>
           <td></td>
