@@ -10,7 +10,7 @@ table.type1 tbody tr:nth-child(odd) { background: #e9e9e9;}
 table.type1 tbody tr:nth-child(even) { background: #f6f6f6;}
 table.type1 tbody tr:hover > * { background:rgba(234,97,81,.2);}
 table.type1 tbody tr:hover th { color:#ea6153;}
-h1 { text-transform: uppercase;}
+h1 { text-transform: uppercase; text-align: center;}
 div[id] { margin:0 0 50px;}
 .box { padding:40px 30px 10px; border: 5px solid #ea6153;}
 .box > * { display: block; border: 3px dashed #2980b9; margin:0 0 30px; padding: 5px;}
