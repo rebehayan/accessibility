@@ -20,13 +20,13 @@ div[id] { margin:0 0 50px;}
 .box input,
 .box label { display: inline;}
 .box style { visibility:hidden;}
-nav { padding: 20px 0; position: sticky; top: 0;}
+nav { padding: 20px 0; position: sticky; top: 0; z-index: 20;}
 nav ul { display: flex;}
 nav li { flex:1; padding: 0 5px;}
 nav li a:target,
 nav li.on a { background: #ea6153; color:#fff;}
 nav li a { display: block; height: 30px; line-height: 30px;text-align: center; border: 1px solid #ea6153; background: #fff; border-radius: 3px;}
-
+.gra:before{ content: ""; position: fixed; left:0; right: 0; top:0; z-index: 19;height: 150px; background: linear-gradient(to bottom, rgba(255,255,255,1) 50% , rgba(255,255,255,0));}
 /*
 27ae60
 ea6153
