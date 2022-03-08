@@ -1,0 +1,28 @@
+h1 { text-align: center; line-height: 1;}
+h1 + p { text-align: center; font-size: 12px; line-height: 1; margin: -20px 0 0; color:gray;}
+.box { padding:40px 30px 10px; border: 5px solid #ea6153;}
+.box > * { border: 3px dashed #2980b9; margin:0 0 30px; padding: 5px;}
+
+
+
+
+.box li:nth-child(1):before { content: "before를 활용한 텍스트"}
+.box li:nth-child(2):after { content: "\역슬레시를 사용한 텍스트"}
+.box li:nth-child(3):before { content: "\e941"; font-family:xeicon; }
+.box li:nth-child(4) { display: none;}
+.box li:nth-child(5) { display: table;}
+.box li:nth-child(6) { display: list-item;}
+.box li:nth-child(7) {visibility: hidden;}
+.box li:nth-child(8) {font-size: 0}
+.box li:nth-child(9) { color: transparent;}
+.box li:nth-child(10) { color:rgba(0,0,0,0);}
+.box li:nth-child(11) { opacity: 0;}
+.box li:nth-child(12) {position:absolute; left: -3000%;}
+.box li:nth-child(13) { width: 0; height: 0; overflow: hidden;}
+
+
+
+
+
+
+/*  */
