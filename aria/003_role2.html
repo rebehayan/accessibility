@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WAI-ARIA Role</title>
+  <script src="js/jquery.js" charset="utf-8"></script>
+<style>
+* { padding: 0; margin:0; list-style: none; text-decoration: none; border: none;}
+body { padding: 50px 50px 100px;}
+:root {
+  --color2 : #3acbe9;
+  --color3 : #6d1cff;
+  --color4 : #000;
+}
+button { cursor: pointer;}
+body > h2 { margin:50px 0 20px; border:1px solid rgba(0,0,0,.2); padding:5px 10px;}
+.btn,
+[role="button"] { width:80px; height: 30px; line-height: 30px; padding: 0 5px; border-radius: 4px; background: #6d1cff; color:#fff; font-size: 14px; text-align: center; }
+[role="tablist"] { display: flex;}
+[role="tablist"] > li { flex:1;}
+[role="tablist"] > li button { width: 100%; height: 30px; border: none; background: #6d1cff; color:#fff;}
+[role="tablist"] > li[aria-selected="true"] button { background: #500fc6; font-weight: bold;}
+[role="tabpanel"] { height: 100px; margin: 5px 0; padding: 5px; background: #f6f9ff;}
+.text input { width: 200px; height: 30px;}
+.text div { font-size: 13px; color:#222; display: inline-block;}
+.status { width: 300px; line-height: 150px; text-align: center; background:#ffa62f; font-weight: bold; color:#fff; border-radius: 10px;}
+
+.alert { display: flex; justify-content: center; align-items: center; flex-direction: column; width: 300px; height: 130px; border-radius: 30px; color:#fff; background: #ff9060;}
+.alert button { margin: 10px 0 0; background: #fff; color:#ff9060; height: 28px; border-radius: 23px; border: none; width: 80px; font-weight: bold; font-size: 14px;}
+
+.alert.color2 { background:var(--color2);}
+.alert.color2 button {color:var(--color2);}
+
+.dialog { padding: 30px; position: relative; width: 400px; height: 200px; border: 3px solid var(--color3); border-radius: 30px; box-sizing: border-box;}
+.dialog:after { content: "x"; position: absolute; right:20px; top:20px; font-size: 30px;}
+.dialog h2 { padding: 0 0 30px;}
+
+.nav { padding:20px; width: 200px; background: #6d1cff; border-radius: 20px;}
+.nav a { padding: 0 5px; display: block; line-height: 40px; color:#fff;}
+.nav a:focus,
+.nav a:hover { background: #a06bff; border-radius: 10px;}
+
+.util {  display: flex;}
+.util li { position: relative; padding: 0 10px;}
+.util li ~ li:before { content: ""; position: absolute; left:0; top:6px; width:1px; height: 12px; background: #ccc;}
+</style>
+</head>
+  <body>
+
+    <h2>Role button</h2>
+    <div role="button" tabindex="0">다음페이지</div>
+
+    <h2>Role tablist, tab, tabpanel</h2>
+    <ul role="tablist">
+      <li role="tab" aria-selected="true" id="tab1_1">
+        <button>뉴스</button>
+      </li>
+      <li role="tab" aria-selected="false" id="tab1_2">
+        <button>공지사항</button>
+      </li>
+    </ul>
+    <div role="tabpanel" aria-expanded="true" aria-labelledby="tab1_1" tabindex="0">
+      잘지내보자는 속보입니다.
+    </div>
+    <div role="tabpanel" aria-expanded="false" aria-labelledby="tab1_2" tabindex="-1">
+      곧 새로운 콘텐츠가 나올것 같습니다.
+    </div>
+
+    <h2>Role tooltip</h2>
+  <div class="text">
+      <input type="text" aria-labelledby="tip">
+      <div role="tooltip" id="tip">영문으로 입력하세요.</div>
+  </div>
+
+  <h2>Role status</h2>
+    <div role="status" class="status">자동저장 되었습니다.</div>
+
+
+    <h2>Role alert</h2>
+    <div role="alert" class="alert">
+      <div>아이디가 입력되지 않았습니다.</div>
+      <button>확인</button>
+    </div>
+
+    <h2>Role alertdialog</h2>
+    <div role="alertdialog" class="alert color2">
+      <div>당신은 인성에 문제가 있습니까?</div>
+      <div>
+        <button>확인</button>
+        <button>취소</button>
+      </div>
+    </div>
+
+    <h2>Role dialog</h2>
+    <div role="dialog" aria-labelledby="poptit" class="dialog">
+      <h2 id="poptit">주문내역</h2>
+      <div>주문내역 내용입니다.</div>
+      <button class="btn">확인</button>
+    </div>
+
+    <h2>Role menubar, menu, menuitem</h2>
+    <nav role="menubar" class="nav">
+      <ul role="menu">
+        <li role="menuitem"><a href="">회사소개</a></li>
+        <li role="menuitem"><a href="">포트폴리오</a></li>
+        <li role="menuitem"><a href="">연락처</a></li>
+      </ul>
+    </nav>
+
+    <h2>Role none, presentation</h2>
+    <ul class="util" role="none">
+      <li><a href="" role="presentation">홈</a></li>
+      <li><a href="">로그인</a></li>
+      <li><a href="" role="none presentation">회원가입</a></li>
+    </ul>
+</body>
+</html>
